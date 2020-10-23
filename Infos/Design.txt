@@ -1,0 +1,20 @@
+- Server runs a copy of the game 
+- a player tells the server what he does -> server checks if it is ok -> if ok he gives feedbak to both players about the move
+- server has list of online players 
+- you log in with opening of menu
+
+
+send login information after this scheme:
+	printWriter.println("quarkfelix");
+	printWriter.println("passwort");
+	printWriter.flush();
+
+
+runs:
+1. creates server socket
+2. waits for clients to connect.
+3. if a client connects a new client object in own Thread is created
+4. clientClass asks for username and password
+5. clientClass checks if correct credentials were used.
+6. if credentials wrong clientClass notifies sender and waits for new credentials
+7. if credentials right clientClass notifies sender and goes in standby

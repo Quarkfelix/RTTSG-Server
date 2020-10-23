@@ -1,0 +1,2 @@
+User:
+id(integer, primary key, not null, auto_increment) | username(varchar(40), not null) | password (varchar(30), not null)
